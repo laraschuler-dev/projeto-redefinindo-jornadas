@@ -1,0 +1,370 @@
+/* Reset de estilos padrão para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    /*background-color: #004aad;*/
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9900;
+}
+
+section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos para a seção com imagem de fundo e título */
+#titulo {
+    background-color: #333;
+    color: #fff;
+    background-image: url('../img/0001-morador-rua-abandono.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+#titulo h1,
+#titulo h2 {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#titulo h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#titulo h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+/* Reduzir o brilho da imagem de fundo */
+#titulo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3); /* Fundo escurecido */
+    z-index: -1;
+}
+
+/* Aplicar filtro de brilho */
+#titulo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../img/0001-morador-rua-abandono.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7); /* Reduzir o brilho da imagem */
+    z-index: -2;
+}
+
+/* Estilos para a seção "Sobre o Projeto" */
+#sobre {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.container h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.container ul {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.container ul li {
+    margin-bottom: 10px;
+}
+
+.container strong {
+    color: #333;
+}
+/* Estilos para a seção "Contexto e Justificativa" */
+#contexto {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+#contexto h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#contexto p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#contexto strong {
+    color: #333;
+}
+
+.container ul {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.container ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para a seção "Funcionalidades" e outros elementos da página */
+#funcionalidades {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+#funcionalidades h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#funcionalidades ul {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#funcionalidades ul li {
+    margin-bottom: 10px;
+}
+
+#funcionalidades strong {
+    color: #333;
+}
+
+.container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Estilos para a seção "Metodologia" */
+#metodologia {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+#metodologia h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#metodologia h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#metodologia p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Estilos para a seção "Resultados e Impacto" */
+#resultados {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+#resultados h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#resultados h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#resultados p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#resultados strong {
+    color: #333;
+}
+
+/* Estilos para a seção "Considerações Finais" */
+#consideracoes {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+#consideracoes h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#consideracoes h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#consideracoes p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#consideracoes strong {
+    color: #333;
+}
+
+/* Estilos para a seção "Contato e Informações Adicionais" */
+#contato {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+#contato h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#contato h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#contato p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#contato a {
+    color: #333;
+    text-decoration: underline;
+}
+
+#contato ul {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#contato ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para o footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    /*background-color: #004aad;*/
+    color: #fff;
+}
+
+footer p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #ff9900;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #e57300; /* Cor alternativa quando o link é hover */
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff9900;
+}
