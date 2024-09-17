@@ -9,13 +9,16 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #004AAD; /* Cor do fundo */
 }
+
+
 
 header {
     background-color: #004AAD;
     color: #fff;
     padding: 10px 0;
-    position: fixed;
+    height: auto; /* Ajusta a altura ao conteúdo */
     top: 0;
     left: 0;
     width: 100%;
@@ -28,7 +31,12 @@ nav {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 10px; /* Reduzindo a margem interna */
+    padding: 0 20px; /* Ajuste para diminuir o espaço interno */
+    background-color: #004AAD;
+}
+
+.logo {
+    margin-right: 20px; /* Espaço entre o logo e o menu */
 }
 
 .logo img {
@@ -36,28 +44,41 @@ nav {
     height: auto;
 }
 
-.nav-links {
-    list-style: none;
+/* Customização da navbar */
+.navbar {
+    background-color: #004AAD; /* Mantém a cor original do cabeçalho */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav {
     display: flex;
-    margin-right: -10px; /* Ajustando o espaçamento entre os itens */
+    gap: 20px; /* Ajuste o espaçamento entre os itens do menu */
 }
 
-.nav-links li {
-    margin-left: 20px; /* Ajustando a margem entre os itens */
+/* Para evitar que o menu se distancie demais do logo */
+.navbar-nav .nav-item {
+    margin-right: 0;
 }
 
-.nav-links a {
-    text-decoration: none;
+.navbar-nav .nav-link {
     color: #fff;
     font-weight: bold;
-    transition: color 0.3s;
-    white-space: nowrap; /* Impede que os títulos de duas palavras quebrem */
-    padding: 8px 12px; /* Ajustando o padding interno dos links */
+    
 }
 
-.nav-links a:hover {
-    color: #ff9900;
+.navbar-nav .nav-link:hover {
+    color: #cce0ff;
 }
+
+.navbar-toggler {
+    border-color: #fff; /* Cor branca para o ícone do hamburger */
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+
 
 section {
     max-width: 1200px;
@@ -65,7 +86,6 @@ section {
     /*padding: 20px;*/
     border: 1px solid #ddd;
     border-radius: 5px;
-   padding-top: 80px; /* Ajuste o valor conforme necessário */
     scroll-margin-top: 100px; 
 }
 
@@ -77,15 +97,23 @@ section {
     background-size: cover;
     background-position: center;
     padding: 100px 0; /* Espaçamento interno */
-    margin-top: 200px; /* Espaço superior para evitar sobreposição pelo cabeçalho */
+    margin-top: 100px; /* Espaço superior para evitar sobreposição pelo cabeçalho */
+}
+
+.container-fluid {
+    background-color: #004AAD;
+    
 }
 
 #titulo h1,
 #titulo h2 {
     padding: 10px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.7); /* Aumenta a opacidade para melhorar a legibilidade */
     font-weight: bold;
+    color: #004AAD; /* Altere a cor do texto para algo mais escuro */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aplica sombra ao texto */
 }
+
 
 #titulo h1 {
     font-family: 'Lexend Deca', sans-serif;
@@ -109,7 +137,7 @@ section {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(100, 149, 237, 0.5); /* Fundo azul com opacidade mais clara */
+    background: rgba(211, 211, 211, 0.3); /* Cinza claro e mais transparente */
     z-index: -1;
 }
 
@@ -434,32 +462,52 @@ footer a:hover {
 }
 
 /* Media Queries para tornar a página responsiva */
+/* Ajuste adicional para dispositivos móveis */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
         align-items: flex-start;
+        padding: 10px 20px; /* Aumenta o padding no menu */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 15px; /* Aumenta o espaçamento entre os itens do menu */
     }
 
     .logo img {
-        width: 80px;
+        width: 70px; /* Reduz o tamanho do logo */
         height: auto;
         margin-bottom: 10px;
     }
 
-    .nav-links {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 10px;
+    #titulo h1 {
+        font-size: 40px; /* Diminui o tamanho do título principal */
     }
 
-    .nav-links li {
-        margin-right: 0;
-        margin-bottom: 10px;
+    #titulo h2 {
+        font-size: 25px; /* Diminui o subtítulo */
     }
 
     section {
-        margin: 20px auto;
-        padding: 10px;
+        margin: 20px 10px; /* Reduz a margem para evitar aperto */
+        padding: 15px; /* Aumenta o espaçamento interno */
     }
 
+    .container {
+        padding: 0 10px; /* Ajusta o padding da seção */
+    }
+
+    footer {
+        padding: 15px 10px; /* Reduz o padding do footer */
+    }
+
+    .parceiros-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Ajusta o grid dos parceiros */
+        gap: 15px; /* Reduz o espaçamento entre os parceiros */
+    }
+
+    .parceiro img {
+        max-width: 60%; /* Diminui o tamanho das imagens de parceiros */
+    }
 }

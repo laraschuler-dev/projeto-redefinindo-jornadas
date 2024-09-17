@@ -1,183 +1,251 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redefinindo Jornadas</title>
     <link rel="stylesheet" href="css/style.css">
-    <script></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header id="topo">
-        <nav>
-            <div class="logo">
-                <img src="img/logo.png" alt="Logo da Aplicação">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="padding:0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="Logo da Aplicação" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contexto">Justificativa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#funcionalidades">Funcionalidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#metodologia">Metodologia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#resultados">Resultados</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#consideracoes">Considerações Finais</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#parceiros">Parceiros</a></li>
+                    </ul>
+                </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contexto">Justificativa</a></li>
-                <li><a href="#funcionalidades">Funcionalidades</a></li>
-                <li><a href="#metodologia">Metodologia</a></li>
-                <li><a href="#resultados">Resultados</a></li>
-                <li><a href="#consideracoes">Considerações Finais</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#parceiros">Parceiros</a></li>
-            </ul>
         </nav>
     </header>
-    <main>
-    <section id="titulo">
-        <div class="background-image">
-            <div class="container">
-                <h1>Redefinindo Jornadas</h1>
-                <h2>Uma rede social solidária para a reintegração social de pessoas em situação de rua</h2>
-            </div>
-        </div>
-    </section>
-    <section id="sobre">
-        <div class="container">
-            <h2>Sobre o Projeto</h2>
-            <p>O projeto "Redefinindo Jornadas" propõe o desenvolvimento de uma rede social solidária digital com o objetivo de apoiar a reintegração de pessoas em situação de rua. Motivado pelo aumento alarmante dessa população, a iniciativa busca criar um ambiente onde as necessidades individuais possam ser identificadas e atendidas de maneira eficiente.</p>
-            <p>Através da rede social solidária, as pessoas em situação de rua poderão se cadastrar e criar perfis personalizados que refletem suas necessidades e habilidades. A plataforma utiliza uma triagem criteriosa para entender melhor cada indivíduo, permitindo assim direcioná-los para serviços assistenciais adequados como abrigo, alimentação, cuidados médicos, apoio psicológico e oportunidades de emprego.</p>
-            <p>Além disso, a rede social solidária atua como um elo de conexão entre a população de rua e voluntários, organizações não governamentais e instituições públicas. Esse ambiente colaborativo facilita a mobilização de recursos e o engajamento da comunidade em ações de apoio e reintegração social, promovendo a inclusão e a emancipação dessas pessoas.</p>
-        </div>
-    </section>
-    <section id="contexto">
-        <div class="container">
-            <h2>Contexto e Justificativa</h2>
-            <p>O Brasil tem enfrentado um aumento significativo na população de pessoas em situação de rua. De acordo com o Instituto de Pesquisa Econômica Aplicada (IPEA), em 2022, esse número superou 281,4 mil pessoas, representando um crescimento de 211% em relação a 2012. Este aumento alarmante reflete uma série de fatores, incluindo crises econômicas, falta de políticas públicas eficazes, e desigualdade social crescente.</p>
-            <p>Este projeto surge da necessidade urgente de abordar essa questão de maneira inovadora e eficaz. A proposta de uma rede social solidária digital visa preencher as lacunas dos métodos tradicionais de assistência, proporcionando uma plataforma onde as necessidades de cada indivíduo possam ser identificadas e atendidas de maneira personalizada e eficiente.</p>
-            <p>Além disso, a iniciativa está alinhada com os Objetivos de Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU), particularmente com os objetivos de erradicação da pobreza, redução das desigualdades e promoção do bem-estar para todos. A rede social solidária não só visa atender às necessidades imediatas das pessoas em situação de rua, mas também facilitar sua reintegração social e econômica a longo prazo.</p>        </div>
-    </section>
-    <section id="funcionalidades">
-        <div class="container">
-            <h2>Funcionalidades</h2>
-            <h3>Para Pessoas em Situação de Rua (PSR)</h3>
-        <ul>
-            <li><strong>Consultar Serviços:</strong> Buscar informações sobre serviços disponíveis na plataforma, como alimentação, abrigo e atendimento médico.</li>
-            <li><strong>Solicitar Serviços:</strong> Fazer pedidos para obter os serviços de que precisam de forma rápida e direta.</li>
-            <li><strong>Acessar Oportunidades:</strong> Encontrar vagas de emprego, cursos profissionalizantes e outras oportunidades para melhorar suas condições de vida.</li>
-            <li><strong>Compartilhar Experiências:</strong> Publicar suas histórias e experiências para aumentar a visibilidade de suas situações e sensibilizar a comunidade.</li>
-            <li><strong>Realizar Denúncias:</strong> Denunciar casos de violência ou abusos contra pessoas em situação de rua, garantindo um canal seguro e confidencial.</li>
-        </ul>
-        
-        <h3>Para Instituições de Proteção Social Públicas (IPSP)</h3>
-        <ul>
-            <li><strong>Gerenciar Cadastros:</strong> Cadastrar e manter o registro atualizado de pessoas em situação de rua.</li>
-            <li><strong>Encaminhar para Serviços:</strong> Direcionar PSR para serviços especializados que atendam suas necessidades específicas.</li>
-            <li><strong>Gerenciar Recursos:</strong> Administrar os recursos públicos destinados à assistência de PSR de maneira eficiente.</li>
-            <li><strong>Captar Recursos:</strong> Implementar estratégias para captar recursos, incluindo a utilização de QR Codes para doações ao Fundo Municipal de Assistência Social.</li>
-            <li><strong>Monitorar e Avaliar:</strong> Acompanhar e avaliar o impacto dos serviços prestados para garantir a efetividade das ações.</li>
-        </ul>
-
-        <h3>Para ONGs</h3>
-        <ul>
-            <li><strong>Encaminhar para Serviços:</strong> Auxiliar PSR, encaminhando-os para serviços especializados necessários.</li>
-            <li><strong>Registrar PSR:</strong> Cadastrar e acompanhar PSR na rede social solidária, garantindo um suporte contínuo.</li>
-            <li><strong>Oferecer Serviços:</strong> Disponibilizar cursos, atendimento especializado, abrigo e internação para PSR.</li>
-        </ul>
-
-        <h3>Para Voluntários/Parceiros</h3>
-        <ul>
-            <li><strong>Oferecer Serviços:</strong> Contribuir com a oferta de serviços como cursos, atendimento especializado, doações e oportunidades de trabalho para PSR.</li>
-            <li><strong>Consultar Serviços:</strong> Buscar e visualizar informações sobre os serviços disponíveis na plataforma para melhor direcionamento de seus esforços.</li>
-            <li><strong>Realizar Denúncias:</strong> Utilizar a plataforma para denunciar casos de violência ou abuso contra PSR, garantindo um ambiente seguro e colaborativo.</li>
-        </ul>
-        </div>
-    </section>
-    <section id="metodologia">
-        <div class="container">
-            <h2>Metodologia</h2>
-            <p>O  projeto em questão adota uma abordagem metodológica dividida em cinco fases, onde cada uma desempenha um papel fundamental para atingir os objetivos do projeto.</p>
-            <img src="img/Cópia de Diagrama das etapas do projeto.png" alt="Descrição da Imagem" class="metodologia-imagem">
-        </div>
-    </section>
-    <section id="resultados">
-        <div class="container">
-            <h2>Resultados e Impacto</h2>
-            <p>A pesquisa até o momento confirmou várias proposições iniciais do projeto, destacando a diversidade de necessidades individuais na população em situação de rua, acentuadas pela condição de extrema pobreza e dependência química/alcoólica.</p>
-            <p>Foi observado um crescimento preocupante da população em situação de rua no Brasil evidenciando a necessidade de medidas urgentes por parte do poder público.</p>
-            <p>O estigma e a exclusão social foram identificados como barreiras significativas no acesso aos serviços assistenciais, enfatizando a importância de um tratamento humanizado e da conscientização social.</p>
-            <p>Entrevistas reforçaram a eficácia de sistemas integrados de cadastramento e triagem para acelerar o tratamento e reintegração social.</p>
-            <p>A rede social solidária proposta demonstrou potencial para unir diversos setores da sociedade em apoio às pessoas em situação de rua, alinhando-se aos Objetivos de Desenvolvimento Sustentável da ONU.</p>
-            <p>Apesar de se mostrar um grande desafio por conta da burocracia, a integração com o Cadastro Único é considerada um meio para melhorar a eficiência dos serviços prestados.</p>
-            <p>Os resultados até o momento apontam para a importância do apoio da sociedade e do combate ao preconceito para o sucesso da plataforma.</p>
-        </div>
-    </section>
-    <section id="consideracoes">
-        <div class="container">
-            <h2>Considerações Finais</h2>
-            <p>O projeto apresenta uma abordagem promissora para o processo de reintegração social de pessoas em situação de rua através do desenvolvimento da plataforma digital solidária Redefinindo Jornadas. As pesquisas realizadas destacaram a urgência das necessidades dessa população e a eficácia potencial da plataforma em agilizar o atendimento e promover a inclusão social. As entrevistas confirmaram muitas hipóteses iniciais e reforçaram a necessidade de uma rede social solidária. Não obstante, o projeto ainda esteja em desenvolvimento, os resultados preliminares e feedbacks são encorajadores. Espera-se agregar mais valor com novas pesquisas e entrevistas, finalizando todas as etapas até novembro de 2024. A iniciativa visa promover a inclusão, igualdade e justiça social, alinhando-se aos Objetivos de Desenvolvimento Sustentável da ONU.</p>
-        </div>
-    </section>
-    <section id="contato">
-        <div class="container">
-            <h2>Contato e Informações Adicionais</h2>
-            <h3>Entre em Contato</h3>
-            <p>
-                Ficamos felizes em responder a quaisquer perguntas ou dúvidas que você possa ter sobre o projeto.
-                Sinta-se à vontade para entrar em contato conosco através do email <a
-                    href="mailto:redefinindojornadas@gmail.com">redefinindojornadas@gmail.com</a>.
-            </p>
-            <h3>Redes Sociais</h3>
-            <p>
-                Siga-nos nas redes sociais para acompanhar as últimas atualizações e compartilhar nosso compromisso de
-                promover a reintegração social das pessoas em situação de rua:
-            </p>
-            <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=61550486858825&mibextid=ZbWKwL" target="_blank"
-                        rel="noopener noreferrer">Facebook</a></li>
-                <li><a href="https://www.instagram.com/redefinindojornadas/" target="_blank"
-                        rel="noopener noreferrer">Instagram</a></li>
-
-            </ul>
-            <h3>Referências Bibliográficas</h3>
-            <p>
-                Para obter mais informações sobre os dados e pesquisas que embasam o projeto, consulte nossas
-                referências bibliográficas e fontes de dados utilizadas.
-            </p>
-            <ul>
-                <li><a
-                        href="https://www.ipea.gov.br/portal/categorias/45-todas-as-noticias/noticias/13457-populacao-em-situacao-de-rua-supera-281-4-mil-pessoas-no-brasil">População
-                        em situação de rua supera 281,4 mil pessoas no Brasil</a></li>
-                <li><a href="https://www.scielosp.org/article/csc/2022.v27n1/151-160/">População em situação de rua:
-                        estigmas, preconceitos e estratégias de cuidado em saúde</a></li>
-                <li><a
-                        href="https://www.gov.br/mdh/pt-br/navegue-por-temas/populacao-em-situacao-de-rua/publicacoes/sumario">Síntese
-                        da Política para População de Rua</a></li>
-                <li><a href="https://www.scielo.br/j/pcp/a/zZmF6jcYxpRqGS4b5QMX9sQ/">Pessoas em Situação de Rua no
-                        Brasil: Revisão Sistemática</a></li>
-                <li><a
-                        href="https://g1.globo.com/jornal-nacional/noticia/2023/07/26/alexandre-de-moraes-proibe-remocoes-forcadas-de-pessoas-em-situacao-de-rua.ghtml">Alexandre
-                        de Moraes proíbe remoções forçadas de pessoas em situação de rua</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="parceiros">
-        <div class="container">
-            <h2>Parceiros e Colaboradores</h2>
-            <p>Agradecemos o apoio dos nossos parceiros e colaboradores:</p>
-            
-            <div class="parceiros-grid">
-                <div class="parceiro">
-                    <img src="img/logocimol-removebg-preview.png" alt="Logo da organização/pessoa 1">
-                </div>
-                <div class="parceiro">
-                    <img src="img/logocimol-removebg-preview.png" alt="Logo da organização/pessoa 2">
-                </div>
-                <div class="parceiro">
-                    <img src="img/logocimol-removebg-preview.png" alt="Logo da organização/pessoa 3">
-                </div>
-                <!-- Adicione mais conforme necessário -->
-            </div>
-            
-            <p>Se você está interessado em apoiar este projeto como um investidor, entre em contato conosco.</p>
-        </div>
-    </section>
     
-</main>
+    <main>
+        <section id="titulo">
+            <div class="background-image">
+                <div class="container">
+                    <h1>Redefinindo Jornadas</h1>
+                    <h2>Uma rede social solidária para a reintegração de pessoas em situação de rua</h2>
+                </div>
+            </div>
+        </section>
+        <section id="sobre">
+            <div class="container">
+                <h2>Sobre o Projeto</h2>
+                <p>O projeto "Redefinindo Jornadas" propõe o desenvolvimento de uma rede social solidária digital com o
+                    objetivo de apoiar a reintegração de pessoas em situação de rua. Motivado pelo aumento alarmante
+                    dessa população, a iniciativa busca criar um ambiente onde as necessidades individuais possam ser
+                    identificadas e atendidas de maneira eficiente.</p>
+                <p>Através da rede social solidária, as pessoas em situação de rua poderão se cadastrar e criar perfis
+                    personalizados que refletem suas necessidades e habilidades. A plataforma utiliza uma triagem
+                    criteriosa para entender melhor cada indivíduo, permitindo assim direcioná-los para serviços
+                    assistenciais adequados como abrigo, alimentação, cuidados médicos, apoio psicológico e
+                    oportunidades de emprego.</p>
+                <p>Além disso, a rede social solidária atua como um elo de conexão entre a população de rua e
+                    voluntários, organizações não governamentais e instituições públicas. Esse ambiente colaborativo
+                    facilita a mobilização de recursos e o engajamento da comunidade em ações de apoio e reintegração
+                    social, promovendo a inclusão e a emancipação dessas pessoas.</p>
+            </div>
+        </section>
+        <section id="contexto">
+            <div class="container">
+                <h2>Contexto e Justificativa</h2>
+                <p>O Brasil tem enfrentado um aumento significativo na população de pessoas em situação de rua. De
+                    acordo com o Instituto de Pesquisa Econômica Aplicada (IPEA), em 2022, esse número superou 281,4 mil
+                    pessoas, representando um crescimento de 211% em relação a 2012. Este aumento alarmante reflete uma
+                    série de fatores, incluindo crises econômicas, falta de políticas públicas eficazes, e desigualdade
+                    social crescente.</p>
+                <p>Este projeto surge da necessidade urgente de abordar essa questão de maneira inovadora e eficaz. A
+                    proposta de uma rede social solidária digital visa preencher as lacunas dos métodos tradicionais de
+                    assistência, proporcionando uma plataforma onde as necessidades de cada indivíduo possam ser
+                    identificadas e atendidas de maneira personalizada e eficiente.</p>
+                <p>Além disso, a iniciativa está alinhada com os Objetivos de Desenvolvimento Sustentável (ODS) da
+                    Organização das Nações Unidas (ONU), particularmente com os objetivos de erradicação da pobreza,
+                    redução das desigualdades e promoção do bem-estar para todos. A rede social solidária não só visa
+                    atender às necessidades imediatas das pessoas em situação de rua, mas também facilitar sua
+                    reintegração social e econômica a longo prazo.</p>
+            </div>
+        </section>
+        <section id="funcionalidades">
+            <div class="container">
+                <h2>Funcionalidades</h2>
+                <h3>Para Pessoas em Situação de Rua (PSR)</h3>
+                <ul>
+                    <li><strong>Consultar Serviços:</strong> Buscar informações sobre serviços disponíveis na
+                        plataforma, como alimentação, abrigo e atendimento médico.</li>
+                    <li><strong>Solicitar Serviços:</strong> Fazer pedidos para obter os serviços de que precisam de
+                        forma rápida e direta.</li>
+                    <li><strong>Acessar Oportunidades:</strong> Encontrar vagas de emprego, cursos profissionalizantes e
+                        outras oportunidades para melhorar suas condições de vida.</li>
+                    <li><strong>Compartilhar Experiências:</strong> Publicar suas histórias e experiências para aumentar
+                        a visibilidade de suas situações e sensibilizar a comunidade.</li>
+                    <li><strong>Realizar Denúncias:</strong> Denunciar casos de violência ou abusos contra pessoas em
+                        situação de rua, garantindo um canal seguro e confidencial.</li>
+                </ul>
+
+                <h3>Para Instituições de Proteção Social Públicas (IPSP)</h3>
+                <ul>
+                    <li><strong>Gerenciar Cadastros:</strong> Cadastrar e manter o registro atualizado de pessoas em
+                        situação de rua.</li>
+                    <li><strong>Encaminhar para Serviços:</strong> Direcionar PSR para serviços especializados que
+                        atendam suas necessidades específicas.</li>
+                    <li><strong>Gerenciar Recursos:</strong> Administrar os recursos públicos destinados à assistência
+                        de PSR de maneira eficiente.</li>
+                    <li><strong>Captar Recursos:</strong> Implementar estratégias para captar recursos, incluindo a
+                        utilização de QR Codes para doações ao Fundo Municipal de Assistência Social.</li>
+                    <li><strong>Monitorar e Avaliar:</strong> Acompanhar e avaliar o impacto dos serviços prestados para
+                        garantir a efetividade das ações.</li>
+                </ul>
+
+                <h3>Para ONGs</h3>
+                <ul>
+                    <li><strong>Encaminhar para Serviços:</strong> Auxiliar PSR, encaminhando-os para serviços
+                        especializados necessários.</li>
+                    <li><strong>Registrar PSR:</strong> Cadastrar e acompanhar PSR na rede social solidária, garantindo
+                        um suporte contínuo.</li>
+                    <li><strong>Oferecer Serviços:</strong> Disponibilizar cursos, atendimento especializado, abrigo e
+                        internação para PSR.</li>
+                </ul>
+
+                <h3>Para Voluntários/Parceiros</h3>
+                <ul>
+                    <li><strong>Oferecer Serviços:</strong> Contribuir com a oferta de serviços como cursos, atendimento
+                        especializado, doações e oportunidades de trabalho para PSR.</li>
+                    <li><strong>Consultar Serviços:</strong> Buscar e visualizar informações sobre os serviços
+                        disponíveis na plataforma para melhor direcionamento de seus esforços.</li>
+                    <li><strong>Realizar Denúncias:</strong> Utilizar a plataforma para denunciar casos de violência ou
+                        abuso contra PSR, garantindo um ambiente seguro e colaborativo.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="metodologia">
+            <div class="container">
+                <h2>Metodologia</h2>
+                <p>O projeto em questão adota uma abordagem metodológica dividida em cinco fases, onde cada uma
+                    desempenha um papel fundamental para atingir os objetivos do projeto.</p>
+                <img src="img/diagramaMetodologia.png" alt="Descrição da Imagem" class="metodologia-imagem">
+            </div>
+        </section>
+        <section id="resultados">
+            <div class="container">
+                <h2>Resultados e Impacto</h2>
+                <p>A pesquisa até o momento confirmou várias proposições iniciais do projeto, destacando a diversidade
+                    de necessidades individuais na população em situação de rua, acentuadas pela condição de extrema
+                    pobreza e dependência química/alcoólica.</p>
+                <p>Foi observado um crescimento preocupante da população em situação de rua no Brasil evidenciando a
+                    necessidade de medidas urgentes por parte do poder público.</p>
+                <p>O estigma e a exclusão social foram identificados como barreiras significativas no acesso aos
+                    serviços assistenciais, enfatizando a importância de um tratamento humanizado e da conscientização
+                    social.</p>
+                <p>Entrevistas reforçaram a eficácia de sistemas integrados de cadastramento e triagem para acelerar o
+                    tratamento e reintegração social.</p>
+                <p>A rede social solidária proposta demonstrou potencial para unir diversos setores da sociedade em
+                    apoio às pessoas em situação de rua, alinhando-se aos Objetivos de Desenvolvimento Sustentável da
+                    ONU.</p>
+                <p>Apesar de se mostrar um grande desafio por conta da burocracia, a integração com o Cadastro Único é
+                    considerada um meio para melhorar a eficiência dos serviços prestados.</p>
+                <p>Os resultados até o momento apontam para a importância do apoio da sociedade e do combate ao
+                    preconceito para o sucesso da plataforma.</p>
+            </div>
+        </section>
+        <section id="consideracoes">
+            <div class="container">
+                <h2>Considerações Finais</h2>
+                <p>O projeto apresenta uma abordagem promissora para o processo de reintegração social de pessoas em
+                    situação de rua através do desenvolvimento da plataforma digital solidária Redefinindo Jornadas. As
+                    pesquisas realizadas destacaram a urgência das necessidades dessa população e a eficácia potencial
+                    da plataforma em agilizar o atendimento e promover a inclusão social. As entrevistas confirmaram
+                    muitas hipóteses iniciais e reforçaram a necessidade de uma rede social solidária. Não obstante, o
+                    projeto ainda esteja em desenvolvimento, os resultados preliminares e feedbacks são encorajadores.
+                    Espera-se agregar mais valor com novas pesquisas e entrevistas, finalizando todas as etapas até
+                    novembro de 2024. A iniciativa visa promover a inclusão, igualdade e justiça social, alinhando-se
+                    aos Objetivos de Desenvolvimento Sustentável da ONU.</p>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="container">
+                <h2>Contato e Informações Adicionais</h2>
+                <h3>Entre em Contato</h3>
+                <p>
+                    Ficamos felizes em responder a quaisquer perguntas ou dúvidas que você possa ter sobre o projeto.
+                    Sinta-se à vontade para entrar em contato conosco através do email <a
+                        href="mailto:redefinindojornadas@gmail.com">redefinindojornadas@gmail.com</a>.
+                </p>
+                <h3>Redes Sociais</h3>
+                <p>
+                    Siga-nos nas redes sociais para acompanhar as últimas atualizações e compartilhar nosso compromisso
+                    de
+                    promover a reintegração social das pessoas em situação de rua:
+                </p>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61550486858825&mibextid=ZbWKwL" target="_blank"
+                            rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/redefinindojornadas/" target="_blank"
+                            rel="noopener noreferrer">Instagram</a></li>
+
+                </ul>
+                <h3>Referências Bibliográficas</h3>
+                <p>
+                    Para obter mais informações sobre os dados e pesquisas que embasam o projeto, consulte nossas
+                    referências bibliográficas e fontes de dados utilizadas.
+                </p>
+                <ul>
+                    <li><a
+                            href="https://www.ipea.gov.br/portal/categorias/45-todas-as-noticias/noticias/13457-populacao-em-situacao-de-rua-supera-281-4-mil-pessoas-no-brasil">População
+                            em situação de rua supera 281,4 mil pessoas no Brasil</a></li>
+                    <li><a href="https://www.scielosp.org/article/csc/2022.v27n1/151-160/">População em situação de rua:
+                            estigmas, preconceitos e estratégias de cuidado em saúde</a></li>
+                    <li><a
+                            href="https://www.gov.br/mdh/pt-br/navegue-por-temas/populacao-em-situacao-de-rua/publicacoes/sumario">Síntese
+                            da Política para População de Rua</a></li>
+                    <li><a href="https://www.scielo.br/j/pcp/a/zZmF6jcYxpRqGS4b5QMX9sQ/">Pessoas em Situação de Rua no
+                            Brasil: Revisão Sistemática</a></li>
+                    <li><a
+                            href="https://g1.globo.com/jornal-nacional/noticia/2023/07/26/alexandre-de-moraes-proibe-remocoes-forcadas-de-pessoas-em-situacao-de-rua.ghtml">Alexandre
+                            de Moraes proíbe remoções forçadas de pessoas em situação de rua</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="parceiros">
+            <div class="container">
+                <h2>Parceiros e Colaboradores</h2>
+                <p>Espaço reservado para os futuros parceiros e colaboradores do projeto:</p>
+
+                <div class="parceiros-grid">
+                    <div class="parceiro">
+                        <img src="img/logocimol-removebg-preview.png" alt="Logo da organização/pessoa 1">
+                    </div>
+                    <div class="parceiro">
+                        <img src="img/logocimol-removebg-preview.png" alt="Logo da organização/pessoa 2">
+                    </div>
+
+                    <!-- Adicione mais conforme necessário -->
+                </div>
+
+                <p>Se você está interessado em apoiar este projeto, entre em contato conosco.</p>
+            </div>
+        </section>
+
+    </main>
 
     <footer>
         <div class="container">
@@ -194,4 +262,5 @@
     </footer>
     <script src="js/script.js"></script>
 </body>
+
 </html>
