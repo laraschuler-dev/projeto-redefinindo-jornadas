@@ -18,7 +18,7 @@ header {
     background-color: #004AAD;
     color: #fff;
     padding: 10px 0;
-    height: auto; /* Ajusta a altura ao conteúdo */
+    height: auto;
     top: 0;
     left: 0;
     width: 100%;
@@ -91,29 +91,21 @@ section {
 
 /* Estilos para a seção com imagem de fundo e título */
 #titulo {
-    background-color: #333;
-    color: #fff;
+    position: relative;
     background-image: url('../img/0001-morador-rua-abandono.jpg');
     background-size: cover;
     background-position: center;
-    padding: 100px 0; /* Espaçamento interno */
-    margin-top: 100px; /* Espaço superior para evitar sobreposição pelo cabeçalho */
-}
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
 
 .container-fluid {
     background-color: #004AAD;
     
 }
-
-#titulo h1,
-#titulo h2 {
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.7); /* Aumenta a opacidade para melhorar a legibilidade */
-    font-weight: bold;
-    color: #004AAD; /* Altere a cor do texto para algo mais escuro */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aplica sombra ao texto */
-}
-
 
 #titulo h1 {
     font-family: 'Lexend Deca', sans-serif;
@@ -122,39 +114,22 @@ section {
     color: #004AAD;
 }
 
-#titulo h2 {
-    font-family: 'Inter', sans-serif;
-    font-size: 40px;
-    margin-top: 0;
-    color: #004AAD;
-}
+#titulo h1, #titulo h2 {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  }
 
 /* Reduzir o brilho da imagem de fundo */
-#titulo::before {
-    content: '';
+#titulo .overlay {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(211, 211, 211, 0.3); /* Cinza claro e mais transparente */
-    z-index: -1;
-}
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+  }
 
-/* Aplicar filtro de brilho */
-#titulo::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url('../img/0001-morador-rua-abandono.jpg');
-    background-size: cover;
-    background-position: center;
-    filter: brightness(0.10); /* Reduzir o brilho da imagem */
-    z-index: -2;
-}
+  #titulo .container {
+    position: relative;
+    z-index: 10;
+  }
 
 /* Estilos para a seção "Sobre o Projeto" */
 #sobre {
